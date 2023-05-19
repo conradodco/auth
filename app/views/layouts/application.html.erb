@@ -11,6 +11,12 @@
 
   <body>
     <p>
+      <% if @current_user%>
+        Hi <%= @current_user["first_name"]%>
+      <a href"/logout">Logout</a>
+      <% %>
+      
+      
       <a href="/users/new">Sign Up</a>
     </p>
 
